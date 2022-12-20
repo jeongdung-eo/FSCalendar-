@@ -13,9 +13,12 @@
 		09447B0A29506A4E0049946D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09447B0829506A4E0049946D /* Main.storyboard */; };
 		09447B0C29506A4E0049946D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09447B0B29506A4E0049946D /* Assets.xcassets */; };
 		09447B0F29506A4E0049946D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09447B0D29506A4E0049946D /* LaunchScreen.storyboard */; };
+		09447B172950807A0049946D /* UICOLOR+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447B162950807A0049946D /* UICOLOR+Extension.swift */; };
+		F30AB6D572CAD751F372B9CF /* Pods_fscalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCECB74CF22A29BC69C1841E /* Pods_fscalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05283209BAA243FF182CA2DA /* Pods-fscalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fscalendar.debug.xcconfig"; path = "Target Support Files/Pods-fscalendar/Pods-fscalendar.debug.xcconfig"; sourceTree = "<group>"; };
 		09447AFF29506A4E0049946D /* fscalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fscalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09447B0229506A4E0049946D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09447B0429506A4E0049946D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		09447B0B29506A4E0049946D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09447B0E29506A4E0049946D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09447B1029506A4E0049946D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09447B162950807A0049946D /* UICOLOR+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICOLOR+Extension.swift"; sourceTree = "<group>"; };
+		BCECB74CF22A29BC69C1841E /* Pods_fscalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fscalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDCF95871D4A98D1C85D60A /* Pods-fscalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fscalendar.release.xcconfig"; path = "Target Support Files/Pods-fscalendar/Pods-fscalendar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30AB6D572CAD751F372B9CF /* Pods_fscalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				09447B0129506A4E0049946D /* fscalendar */,
 				09447B0029506A4E0049946D /* Products */,
+				CCF013496DCA8947D5645D7E /* Pods */,
+				90D99FBF9E5C0E0ECD77B5E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				09447B0229506A4E0049946D /* AppDelegate.swift */,
 				09447B0429506A4E0049946D /* SceneDelegate.swift */,
 				09447B0629506A4E0049946D /* ViewController.swift */,
+				09447B162950807A0049946D /* UICOLOR+Extension.swift */,
 				09447B0829506A4E0049946D /* Main.storyboard */,
 				09447B0B29506A4E0049946D /* Assets.xcassets */,
 				09447B0D29506A4E0049946D /* LaunchScreen.storyboard */,
 				09447B1029506A4E0049946D /* Info.plist */,
 			);
 			path = fscalendar;
+			sourceTree = "<group>";
+		};
+		90D99FBF9E5C0E0ECD77B5E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCECB74CF22A29BC69C1841E /* Pods_fscalendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCF013496DCA8947D5645D7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05283209BAA243FF182CA2DA /* Pods-fscalendar.debug.xcconfig */,
+				BFDCF95871D4A98D1C85D60A /* Pods-fscalendar.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09447B1329506A4E0049946D /* Build configuration list for PBXNativeTarget "fscalendar" */;
 			buildPhases = (
+				A0684C012B3100C052C522DC /* [CP] Check Pods Manifest.lock */,
 				09447AFB29506A4E0049946D /* Sources */,
 				09447AFC29506A4E0049946D /* Frameworks */,
 				09447AFD29506A4E0049946D /* Resources */,
+				223C05A9FB4E431708CACBD4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		223C05A9FB4E431708CACBD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fscalendar/Pods-fscalendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fscalendar/Pods-fscalendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fscalendar/Pods-fscalendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0684C012B3100C052C522DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fscalendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09447AFB29506A4E0049946D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				09447B0729506A4E0049946D /* ViewController.swift in Sources */,
 				09447B0329506A4E0049946D /* AppDelegate.swift in Sources */,
 				09447B0529506A4E0049946D /* SceneDelegate.swift in Sources */,
+				09447B172950807A0049946D /* UICOLOR+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		09447B1429506A4E0049946D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05283209BAA243FF182CA2DA /* Pods-fscalendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +365,6 @@
 				INFOPLIST_FILE = fscalendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +382,7 @@
 		};
 		09447B1529506A4E0049946D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDCF95871D4A98D1C85D60A /* Pods-fscalendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +393,6 @@
 				INFOPLIST_FILE = fscalendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

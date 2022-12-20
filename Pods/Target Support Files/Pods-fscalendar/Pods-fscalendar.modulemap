@@ -1,0 +1,6 @@
+framework module Pods_fscalendar {
+  umbrella header "Pods-fscalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}
